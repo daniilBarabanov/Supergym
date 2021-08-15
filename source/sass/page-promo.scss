@@ -1,0 +1,36 @@
+.page-promo {
+    width: 100%;
+}
+.page-promo__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin:0 auto;
+    padding-top: 120px;
+}
+.page-promo__text {
+    max-width: 355px;
+    margin-left: 60px;
+}
+.page-promo__text h2 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    margin:0;
+    margin-top: 49px;
+}
+.page-promo__text span {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #102654;
+}
+.page-promo__text p {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102654;
+    font-weight: 300;
+}

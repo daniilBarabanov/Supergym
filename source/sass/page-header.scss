@@ -3,3 +3,133 @@
     width: 100%;
     background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
 }
+.page-header__container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin:0 auto;
+}
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.header-top__phone {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    color:#ffffff;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+.page-header__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-left {
+    display: flex;
+    flex-direction: column;
+    width: 34.5%;
+    margin:0;
+}
+.header-left span {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 49px;
+    line-height: 59px;
+    font-weight: 300;
+    color:#ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    align-self: flex-end;
+    margin-top: 122px;
+}
+.header-left h1 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 109px;
+    line-height: 109px;
+    font-weight: 700;
+    color:#ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    max-width: 300px;
+    min-height: 191px;
+    text-align: right;
+    align-self: flex-end;
+    margin:0;
+}
+.header-left p {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color:#ffffff;
+    font-weight: 400;
+    width: 113px;
+    min-height: 51px;
+    text-align: right;
+    margin:0;
+    padding-right: 20px;
+    align-self: flex-end;
+    margin-top: -92px;
+    margin-right: 240px;
+}
+.header-left__button {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    width: 234px;
+    min-height: 61px;
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    transition: all 0.3s;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    align-self: flex-end;
+    margin-top:80px;
+}
+.header-middle {
+    width: 48%;
+    max-width: 500px;
+    height: 556px;
+    background-color: #1f1739;
+    background-image: url("../img/header-superman-descktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin:0;
+    margin-top:-1px;
+}
+.header-right {
+    margin:0;
+    align-self: flex-end;
+}
+.header-socials {
+    list-style: none;
+    padding:0;
+}
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    width: 12%;
+}
+.header-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 75px;
+    margin:0;
+    margin-bottom: 45px;
+}
