@@ -77,13 +77,13 @@
           <h2>Абонементы</h2>
           <ul class="page-subscription__list months-list">
             <li class="months-list__item months-item">
-              <a class="months-item__link month-item__link--active is-active" href="#" onclick="currentSlide(1)">1 месяц</a>
+              <a class="months-item__link month-item__link--active is-active" href="javascript:void(0);" onclick="currentSlide(1)">1 месяц</a>
             </li>
             <li class="months-list__item months-item" onclick="currentSlide(2)">
-              <a class="months-item__link" href="#" onclick="currentSlide(2)">6 месяцев</a>
+              <a class="months-item__link" href="javascript:void(0);" onclick="currentSlide(2)">6 месяцев</a>
             </li>
             <li class="months-list__item months-item">
-              <a class="months-item__link" href="#" onclick="currentSlide(3)">12 месяцев</a>
+              <a class="months-item__link" href="javascript:void(0);" onclick="currentSlide(3)">12 месяцев</a>
             </li>
           </ul>
           <ul class="page-subscription__cards subscription-cards subscription-cards--month is-active">
@@ -172,179 +172,172 @@
           <div class="coaches__title container">
             <h2>Тренеры</h2>
           </div>
-          <div class="coaches__slider slider">
-            <ul class="slider__controls-list">
-              <li class="slider__controls-item">
-                <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий слайд"></button>
-              </li>
-              <li class="slider__control-item">
-                <button class="slider__btn slider__btn--next" type="button" aria-label="Предыдущий слайд"></button>
-              </li>
-            </ul>
-            <div class="slider__wrapper swiper-container">
-              <ul class="slider__list swiper-wrapper">
-                <li class="slider__item swiper-slide">
-                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
+            <div class="page-bestsellers__wrapper coaches__slider slider">
+                <div class="page-bestsellers__slider slider-container slider__wrapper swiper-containerr">
+                    <div class="slider-container__track slider-track">
+                        <div class="slider-track__item slider-item">
+                                            <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/content/slider-anna-pavlova@1x.jpg" width="260" height="294" srcset="img/content/slider-anna-pavlova@1x.jpg 1x, img/content/slider-anna-pavlova@2x.jpg 2x" alt="Фотография Анны Павловой">
-                  <p class="slider__title">Анна Павлова</p>
-                  <div class="slider__information">
-                    <p class="slider__name">Анна Павлова</p>
-                    <p class="slider__sport">Stretching</p>
-                    <ul class="slider__achievement-list">
-                      <li class="slider__achievement">
-                        Certified Level 2 Trainer
-                      </li>
-                      <li class="slider__achievement">
-                        Победительница чемпионата России по Stretching
-                      </li>
-                      <li class="slider__achievement">
-                        Опыт — 5 лет
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="slider__item swiper-slide">
-                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
+                <p class="slider__title">Анна Павлова</p>
+                <div class="slider__information">
+                  <p class="slider__name">Анна Павлова</p>
+                  <p class="slider__sport">Stretching</p>
+                  <ul class="slider__achievement-list">
+                    <li class="slider__achievement">
+                      Certified Level 2 Trainer
+                    </li>
+                    <li class="slider__achievement">
+                      Победительница чемпионата России по Stretching
+                    </li>
+                    <li class="slider__achievement">
+                      Опыт — 5 лет
+                    </li>
+                  </ul>
+                </div>
+                        </div>
+                        <div class="slider-track__item slider-item">
+                                            <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/content/slider-alex-lavrov@1x.jpg" width="260" height="294" srcset="img/content/slider-alex-lavrov@1x.jpg 1x, img/content/slider-alex-lavrov@2x.jpg 2x" alt="Фотография Алексея Лаврова">
-                  <p class="slider__title">Алексей Лавров</p>
-                  <div class="slider__information">
-                    <p class="slider__name">Алексей Лавров</p>
-                    <p class="slider__sport">Hot Iron</p>
-                    <ul class="slider__achievement-list">
-                      <li class="slider__achievement">
-                        Certified Level 2 Trainer
-                      </li>
-                      <li class="slider__achievement">
-                        Победитель чемпионата России по Hot Iron
-                      </li>
-                      <li class="slider__achievement">
-                        Опыт — 5 лет
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="slider__item swiper-slide">
-                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
+                <p class="slider__title">Алексей Лавров</p>
+                <div class="slider__information">
+                  <p class="slider__name">Алексей Лавров</p>
+                  <p class="slider__sport">Hot Iron</p>
+                  <ul class="slider__achievement-list">
+                    <li class="slider__achievement">
+                      Certified Level 2 Trainer
+                    </li>
+                    <li class="slider__achievement">
+                      Победитель чемпионата России по Hot Iron
+                    </li>
+                    <li class="slider__achievement">
+                      Опыт — 5 лет
+                    </li>
+                  </ul>
+                </div>
+                        </div>
+                        <div class="slider-track__item slider-item">
+                                            <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/content/slider-alex-pashkov@1x.jpg" width="260" height="294" srcset="img/content/slider-alex-pashkov@1x.jpg 1x, img/content/slider-alex-pashkov@2x.jpg 2x" alt="Фотография Александра Пашкова">
-                  <p class="slider__title">Александр Пашков</p>
-                  <div class="slider__information">
-                    <p class="slider__name">Александр Пашков</p>
-                    <p class="slider__sport">CrossFit</p>
-                    <ul class="slider__achievement-list">
-                      <li class="slider__achievement">
-                        Certified Level 3 Trainer
-                      </li>
-                      <li class="slider__achievement">
-                        Победитель чемпионата России по CrossFit
-                      </li>
-                      <li class="slider__achievement">
-                        Опыт — 6 лет
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="slider__item swiper-slide">
-                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
+                <p class="slider__title">Александр Пашков</p>
+                <div class="slider__information">
+                  <p class="slider__name">Александр Пашков</p>
+                  <p class="slider__sport">CrossFit</p>
+                  <ul class="slider__achievement-list">
+                    <li class="slider__achievement">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="slider__achievement">
+                      Победитель чемпионата России по CrossFit
+                    </li>
+                    <li class="slider__achievement">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </div>
+                        </div>
+                        <div class="slider-track__item slider-item">
+                                            <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/content/slider-mariya-ketova@1x.jpg" width="260" height="294" srcset="img/content/slider-mariya-ketova@1x.jpg 1x, img/content/slider-mariya-ketova@2x.jpg 2x" alt="Фотография Марии Кетовой">
-                  <p class="slider__title">Мария Кетова</p>
-                  <div class="slider__information">
-                    <p class="slider__name">Мария Кетова</p>
-                    <p class="slider__sport">Pilates</p>
-                    <ul class="slider__achievement-list">
-                      <li class="slider__achievement">
-                        Certified Level 2 Trainer
-                      </li>
-                      <li class="slider__achievement">
-                        Победительница чемпионата России по Pilates
-                      </li>
-                      <li class="slider__achievement">
-                        Опыт — 3 года
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="slider__item swiper-slide">
-                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
-                  <img src="img/content/slider-anna-pavlova@1x.jpg" width="260" height="294" srcset="img/content/slider-anna-pavlova@1x.jpg 1x, img/content/slider-anna-pavlova@2x.jpg 2x" alt="Фотография Анны Павловой">
-                  <p class="slider__title">Анна Павлова</p>
-                  <div class="slider__information">
-                    <p class="slider__name">Анна Павлова</p>
-                    <p class="slider__sport">Stretching</p>
-                    <ul class="slider__achievement-list">
-                      <li class="slider__achievement">
-                        Certified Level 2 Trainer
-                      </li>
-                      <li class="slider__achievement">
-                        Победительница чемпионата России по Stretching
-                      </li>
-                      <li class="slider__achievement">
-                        Опыт — 5 лет
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="slider__item swiper-slide">
-                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
-                  <img src="img/content/slider-alex-lavrov@1x.jpg" width="260" height="294" srcset="img/content/slider-alex-lavrov@1x.jpg 1x, img/content/slider-alex-lavrov@2x.jpg 2x" alt="Фотография Алексея Лаврова">
-                  <p class="slider__title">Алексей Лавров</p>
-                  <div class="slider__information">
-                    <p class="slider__name">Алексей Лавров</p>
-                    <p class="slider__sport">Hot Iron</p>
-                    <ul class="slider__achievement-list">
-                      <li class="slider__achievement">
-                        Certified Level 2 Trainer
-                      </li>
-                      <li class="slider__achievement">
-                        Победитель чемпионата России по Hot Iron
-                      </li>
-                      <li class="slider__achievement">
-                        Опыт — 5 лет
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="slider__item swiper-slide">
-                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
+                <p class="slider__title">Мария Кетова</p>
+                <div class="slider__information">
+                  <p class="slider__name">Мария Кетова</p>
+                  <p class="slider__sport">Pilates</p>
+                  <ul class="slider__achievement-list">
+                    <li class="slider__achievement">
+                      Certified Level 2 Trainer
+                    </li>
+                    <li class="slider__achievement">
+                      Победительница чемпионата России по Pilates
+                    </li>
+                    <li class="slider__achievement">
+                      Опыт — 3 года
+                    </li>
+                  </ul>
+                </div>
+                        </div>
+                        <div class="slider-track__item slider-item"> 
+                                           <!-- 1х: 260px*294px; 2x: 520px*588px -->
+                          <img src="img/content/slider-anna-pavlova@1x.jpg" width="260" height="294" srcset="img/content/slider-anna-pavlova@1x.jpg 1x, img/content/slider-anna-pavlova@2x.jpg 2x" alt="Фотография Анны Павловой">
+                          <p class="slider__title">Анна Павлова</p>
+                          <div class="slider__information">
+                            <p class="slider__name">Анна Павлова</p>
+                            <p class="slider__sport">Stretching</p>
+                            <ul class="slider__achievement-list">
+                              <li class="slider__achievement">
+                                Certified Level 2 Trainer
+                              </li>
+                              <li class="slider__achievement">
+                                Победительница чемпионата России по Stretching
+                              </li>
+                              <li class="slider__achievement">
+                                Опыт — 5 лет
+                              </li>
+                            </ul>
+                          </div></div>
+                        <div class="slider-track__item slider-item">                  
+                          <!-- 1х: 260px*294px; 2x: 520px*588px -->
+                          <img src="img/content/slider-alex-lavrov@1x.jpg" width="260" height="294" srcset="img/content/slider-alex-lavrov@1x.jpg 1x, img/content/slider-alex-lavrov@2x.jpg 2x" alt="Фотография Алексея Лаврова">
+                          <p class="slider__title">Алексей Лавров</p>
+                          <div class="slider__information">
+                            <p class="slider__name">Алексей Лавров</p>
+                            <p class="slider__sport">Hot Iron</p>
+                            <ul class="slider__achievement-list">
+                              <li class="slider__achievement">
+                                Certified Level 2 Trainer
+                              </li>
+                              <li class="slider__achievement">
+                                Победитель чемпионата России по Hot Iron
+                              </li>
+                              <li class="slider__achievement">
+                                Опыт — 5 лет
+                              </li>
+                            </ul>
+                          </div></div>
+                        <div class="slider-track__item slider-item">
+                                            <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <img src="img/content/slider-alex-pashkov@1x.jpg" width="260" height="294" srcset="img/content/slider-alex-pashkov@1x.jpg 1x, img/content/slider-alex-pashkov@2x.jpg 2x" alt="Фотография Александра Пашкова">
-                  <p class="slider__title">Александр Пашков</p>
-                  <div class="slider__information">
-                    <p class="slider__name">Александр Пашков</p>
-                    <p class="slider__sport">CrossFit</p>
-                    <ul class="slider__achievement-list">
-                      <li class="slider__achievement">
-                        Certified Level 3 Trainer
-                      </li>
-                      <li class="slider__achievement">
-                        Победитель чемпионата России по CrossFit
-                      </li>
-                      <li class="slider__achievement">
-                        Опыт — 6 лет
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="slider__item swiper-slide">
-                  <!-- 1х: 260px*294px; 2x: 520px*588px -->
-                  <img src="img/content/slider-mariya-ketova@1x.jpg" width="260" height="294" srcset="img/content/slider-mariya-ketova@1x.jpg 1x, img/content/slider-mariya-ketova@2x.jpg 2x" alt="Фотография Марии Кетовой">
-                  <p class="slider__title">Мария Кетова</p>
-                  <div class="slider__information">
-                    <p class="slider__name">Мария Кетова</p>
-                    <p class="slider__sport">Pilates</p>
-                    <ul class="slider__achievement-list">
-                      <li class="slider__achievement">
-                        Certified Level 2 Trainer
-                      </li>
-                      <li class="slider__achievement">
-                        Победительница чемпионата России по Pilates
-                      </li>
-                      <li class="slider__achievement">
-                        Опыт — 3 года
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
+                <p class="slider__title">Александр Пашков</p>
+                <div class="slider__information">
+                  <p class="slider__name">Александр Пашков</p>
+                  <p class="slider__sport">CrossFit</p>
+                  <ul class="slider__achievement-list">
+                    <li class="slider__achievement">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="slider__achievement">
+                      Победитель чемпионата России по CrossFit
+                    </li>
+                    <li class="slider__achievement">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </div>
+                        </div>
+                        <div class="slider-track__item slider-item">             
+                               <!-- 1х: 260px*294px; 2x: 520px*588px -->
+                          <img src="img/content/slider-mariya-ketova@1x.jpg" width="260" height="294" srcset="img/content/slider-mariya-ketova@1x.jpg 1x, img/content/slider-mariya-ketova@2x.jpg 2x" alt="Фотография Марии Кетовой">
+                          <p class="slider__title">Мария Кетова</p>
+                          <div class="slider__information">
+                            <p class="slider__name">Мария Кетова</p>
+                            <p class="slider__sport">Pilates</p>
+                            <ul class="slider__achievement-list">
+                              <li class="slider__achievement">
+                                Certified Level 2 Trainer
+                              </li>
+                              <li class="slider__achievement">
+                                Победительница чемпионата России по Pilates
+                              </li>
+                              <li class="slider__achievement">
+                                Опыт — 3 года
+                              </li>
+                            </ul>
+                          </div></div>
+                    </div>
+                </div>
             </div>
+            <div class="page-bestsellers__buttons slider-buttons">
+              <button class="btn-prev"></button>
+              <button class="btn-next"></button>
           </div>
         </section>
         <section class="page-advantages">
