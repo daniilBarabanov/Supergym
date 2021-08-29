@@ -1,0 +1,239 @@
+.coaches {
+    padding-top: 62px;
+    padding-bottom: 120px;
+    overflow: hidden;
+  }
+  
+  .coaches__slider {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 1199px) {
+    .coaches {
+      padding-top: 39px;
+      padding-bottom: 100px;
+    }
+  
+    .coaches__slider {
+      max-width: 700px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .coaches {
+      padding-top: 8px;
+      padding-bottom: 71px;
+    }
+  
+    .coaches__slider {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 1270px;
+    min-width: 320px;
+    box-sizing: border-box;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin: 0 auto;
+  }
+  
+  .slider__wrapper {
+    position: relative;
+    margin-top: 51px;
+  
+    .swiper-slide-active {
+      box-shadow: none;
+    }
+  }
+  
+  .slider__controls-list,
+  .slider__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .slider__controls-list {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -17px;
+    z-index: 1;
+  }
+  
+  .slider__btn {
+    width: 18px;
+    height: 34px;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-image: url("../img/slider-arrow-@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .slider__btn {
+      background-image: url("../img/slider-arrow-@2x.png");
+    }
+  }
+  
+  .slider__btn--next {
+    transform: rotate(180deg);
+  }
+  
+  .slider__item {
+    min-width: 268px;
+    max-width: 268px;
+    height: 294px;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+  
+    &:hover {
+      .slider__title {
+        opacity: 0;
+      }
+  
+      .slider__information {
+        opacity: 1;
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .slider__title {
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+    transition: opacity 0.3s;
+  }
+  
+  .slider__information {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background-color: rgba(16, 38, 84, 0.89);
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
+    padding-top: 50px;
+  
+    p {
+      margin: 0;
+    }
+  }
+  
+  .slider__sport {
+    font-size: 16px;
+    line-height: 150%;
+    color: #b6bdcc;
+  }
+  
+  .slider__achievement-list {
+    text-align: left;
+    font-size: 14px;
+    line-height: 150%;
+    padding-left: 27%;
+    padding-right: 5%;
+    margin-top: 31px;
+  }
+  
+  .slider__achievement {
+    margin-bottom: 12px;
+    position: relative;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      top: 7px;
+      left: -15px;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .slider {
+      max-width: 680px;
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+  
+    .slider__wrapper {
+      width: 566px;
+      margin-top: 42px;
+    }
+  
+    .slider__controls-list {
+      width: 100%;
+      left: 0;
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .slider {
+      max-width: 320px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  
+    .slider__wrapper {
+      width: 226px;
+      height: 274px;
+      margin-top: 44px;
+    }
+  
+    .slider__controls-list {
+      width: 91%;
+      margin-left: 4.5%;
+      height: 22px;
+      margin-top: -10px;
+    }
+  
+    .slider__btn {
+      width: 11px;
+      height: 22px;
+    }
+  
+    .slider__information {
+      padding-top: 42px;
+    }
+  
+    .slider__sport {
+      line-height: 100%;
+    }
+  
+    .slider__achievement-list {
+      padding-left: 21%;
+      padding-right: 0;
+      margin-top: 37px;
+    }
+  }
+  

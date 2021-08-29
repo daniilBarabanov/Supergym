@@ -33,80 +33,74 @@
   }
 })();
 
-'use strict';
+var slideIndex = 1;
 
-(function () {
-  var link = document.querySelector('.contacts-item__button');
-  var popup = document.querySelector('.popup');
-  var popup2 = popup.querySelector('.popup__form');
-  var close = popup2.querySelector('.close');
-  var form = popup2.querySelector('.form__popup');
-  var names = popup2.querySelector('[name=yourname]');
-  var phones = popup2.querySelector('[name=yourphone]');
-  var questions = popup2.querySelector('[name=yourquestion]');
+function showImage(n) {
 
-  var isStorageSupport = true;
-  var storage = '';
+    'use strcit';
 
-  try {
-    storage = localStorage.getItem('name');
-  } catch (err) {
-    isStorageSupport = false;
-  }
+    var slide = document.getElementsByClassName('feedback-item');
+    var i;
 
-
-  link.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popup.classList.add('modal-show');
-    document.body.style.overflow = 'hidden';
-
-    if (storage) {
-      names.value = storage;
-      phones.focus();
+    if (n > slide.length) {
+        slideIndex = 1;
     }
-    names.focus();
-  });
 
-  close.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    popup.classList.remove('modal-show');
-    popup.classList.remove('modal-error');
-    document.body.style.overflow = 'visible';
-  });
-
-  form.addEventListener('submit', function (evt) {
-    if (!names.value || !phones.value) {
-      evt.preventDefault();
-      popup.classList.remove('modal-error');
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add('modal-error');
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem('names', names.value);
-      }
+    if(n < 1) {
+        slideIndex = slide.length;
     }
-  });
 
-  window.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains('modal-show')) {
-        popup.classList.remove('modal-show');
-        popup.classList.remove('modal-error');
-        document.body.style.overflow = 'visible';
-      }
+    for (i = 0; i < slide.length; i++) {
+        slide[i].style.display = 'none';
     }
-    if (evt.keyCode === 88) {
-      evt.preventDefault();
-      if (popup.classList.contains('modal-show')) {
-        popup.classList.remove('modal-show');
-        popup.classList.remove('modal-error');
-        document.body.style.overflow = 'visible';
-      }
-    }
-  });
-})();
+    slide[slideIndex - 1].style.display = 'flex';
+    console.log('123');
+}
+showImage(slideIndex);
 
+function plusIndex(n) {
+    showImage(slideIndex += n);
+}
+var subIndex = 1;
+
+function showBlock(a) {
+
+    'use strict'
+
+    var sub = document.getElementsByClassName('subscription-cards');
+    var g;
+
+    if (a > sub.length) {
+        subIndex = 1;
+    }
+
+    if(a < 1) {
+        subIndex = sub.length;
+    }
+
+    for (g = 0; g < sub.length; g++) {
+
+        sub[g].style.display = 'none';
+        sub[g].classList.remove('is-active');
+
+    }
+    sub[subIndex - 1].style.display = 'flex';
+    sub[subIndex - 1].classList.add('is-active');
+    console.log('321');
+}
+
+showBlock(subIndex);
+
+function plusSub(a) {
+    showBlock(subIndex += a);
+}
+
+function currentSlide(a) {
+    'use strict' 
+    
+    showBlock(subIndex = a);
+}
+/*
 const tabItems = document.querySelectorAll('.months-item__link');
 const contentItems = document.querySelectorAll('.subscription-cards');
 
@@ -133,3 +127,90 @@ const checkoutTabs = (item, index) => {
     })
 }
 tabItems.forEach(checkoutTabs)
+*/
+/*
+import Swiper from "swiper";
+
+window.addEventListener(`load`, () => {
+  const sliderBlock = document.querySelector(`.slider__wrapper`);
+  if (sliderBlock) {
+    const mainSlider = new Swiper(`.slider__wrapper`, {
+      loop: true,
+      navigation: {
+        nextEl: `.slider__btn--next`,
+        prevEl: `.slider__btn--prev`
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          slidesPerGroup: 1
+        },
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 30
+        },
+        1200: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          spaceBetween: 40
+        }
+      }
+    });
+  }
+});
+console.log('kkk')
+*/
+'use strict';
+$(document).ready(function() {
+    let position = 0;
+    const slidesToShow = 6; // Количество видимых слайдов
+    const slidesToScroll = 2;
+    const container = $('.coaches__slider '); // Находим общий контейнер карусели
+    const track = $('.slider__list'); // Находим сам трек карусели, который будем двигать
+    const item = $('.slider__item'); // Находим элементы карусели
+    const btnPrev = $('slider__btn--prev'); // Кнопка прев
+    const btnNext = $('slider__btn--next'); // Кнопка некст
+    const itemsCount = item.length; // Суммарное кол-во элементов
+    const itemWidth = container.width() / slidesToShow; // Ширина каждого элемента в карусели
+    const movePosition = slidesToScroll * itemWidth; // Определяем дистанцию, на которую нам надо проскроллить, то есть умножаем кол-во элементов, которые надо проскроллить на их ширину
+
+    
+    item.each(function(index, item) {
+        $(item).css({
+            minWidth: itemWidth,
+        });
+    });
+
+    btnNext.click(function(){
+        const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+        position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+
+        setPosition();
+        checkBtns();
+        console.log('next');
+    });
+    btnPrev.click(function(){
+        const itemsLeft = Math.abs(position) / itemWidth;
+        position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+
+        setPosition();
+        checkBtns();
+        console.log('prev');
+    });
+    const setPosition = () => {
+        track.css({
+            transform: `translateX(${position}px)`
+        });
+    };
+
+    const checkBtns = () => {
+        btnPrev.prop('disabled',position >= 0);
+        btnNext.prop(
+            'disabled',
+            position <= -(itemsCount - slidesToShow) * itemWidth,
+         );
+    };
+    checkBtns();
+});
+checkBtns();

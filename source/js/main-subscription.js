@@ -1,3 +1,4 @@
+/*
 const tabItems = document.querySelectorAll('.months-item__link');
 const contentItems = document.querySelectorAll('.subscription-cards');
 
@@ -24,3 +25,4 @@ const checkoutTabs = (item, index) => {
     })
 }
 tabItems.forEach(checkoutTabs)
+*/

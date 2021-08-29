@@ -1,0 +1,116 @@
+.page-footer {
+    color:#ffffff;
+    background-color: #030A1A;
+    min-height: 108px;
+}
+.page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    min-height: 108px;
+    margin:0 auto;
+}
+.footer-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    min-width: 431px;
+    padding:0;
+    margin:0;
+}
+.navigation-item__link {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+}
+.footer-navigation__item__logo {
+    display: none;
+}
+.navigation-item__link:hover {
+    opacity: 0.5;
+}
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.socials-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.socials-item:last-of-type {
+    margin-right: 0;
+}
+.socials-item__link__logo {
+    fill:white;
+}
+.socials-item:hover {
+    opacity: 0.7;
+}
+@media(max-width:1199px) {
+    .page-footer__wrapper {
+        width: 88.2%;
+    }
+    .page-footer__logo {
+        width: 82px;
+        height: 18px;
+    }
+    .footer-navigation {
+        min-width: 415px;
+    }
+    .socials-item {
+        margin-right: 20px;
+    }
+}
+@media(max-width:767px) {
+    .page-footer {
+        min-height: 260px;
+    }
+    .page-footer__wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90.6%;
+        padding-top: 50px;
+    }
+    .page-footer__logo {
+        display: none;
+    }
+    .footer-navigation__item__logo {
+        width: 68px;
+        height: 15px;
+        display: block;
+    }
+    .footer-navigation {
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: auto;
+        max-height: 150px;
+    }
+    .navigation-item {
+        min-width: 89px;
+        margin-bottom: 30px;
+        margin-right: 71px;
+    }
+    .navigation-item:first-of-type {
+        margin-bottom: 32px;
+    }
+    .navigation-item__link {
+        font-size: 16px;
+        line-height: 18px;
+        text-align: left;
+    }
+    .socials-item {
+        margin-right: 35px;
+    }
+}

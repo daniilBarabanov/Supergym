@@ -1,0 +1,262 @@
+.page-sales {
+    min-height: 801px;
+}
+.page-sales__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin:0 auto;
+    padding-top: 120px;
+}
+.page-sales__wrapper h2 {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    color:#102654;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    margin:0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 52px;
+}
+.sales-unlimited {
+    display: flex;
+    flex-direction: row;
+    width: 48.22%;
+    min-height: 462px;
+}
+.sales-unlimited__left {
+    background-color: #ED0233;
+    width: 50%;
+    padding-top: 45px;
+}
+.sales-unlimited__left span {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 28px;
+    line-height: 43px;
+    color:#ffffff;
+    width: 100%;
+    margin-left: 45px;
+    margin-top: 45px;
+}
+.sales-unlimited__left h3 {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 70px;
+    line-height: 100px;
+    color:#ffffff;
+    margin:0;
+    margin-left: 45px;
+}
+.sales-unlimited__left p {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color:#ffffff;
+    font-weight: 300;
+    margin-left: 45px;
+    margin-bottom: 145px;
+}
+.sales-unlimited__left__link {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffffff;
+    cursor: pointer;
+    margin-left: 45px;
+}
+.sales-unlimited__right {
+    width: 50%;
+    height: auto;
+    background: url('../img/promotions-bg-desktop@1x.jpg') no-repeat;
+    background-size: cover;
+}
+.sales-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0;
+    margin:0;
+    list-style: none;
+    width: 48.22%;
+}
+.sales-item {
+    position: relative;
+    min-height: 211px;
+    width: 100%;
+}
+.sales-item::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    top: 0;
+    margin-top: 0;
+    left: 0;
+    margin-left: 0;
+    border-style: solid;
+    border-width: 7px;
+    -moz-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
+    -webkit-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
+    -o-border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
+    border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
+    border-image-slice: 1;
+    opacity: 1;
+    transition: opacity 0.4s;
+    z-index: 1;
+}
+.sales-item h4 {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    color: #1C3374;
+    margin:0;
+    margin-left: 35px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.sales-item p {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1C3374;
+    font-weight: 400;
+    margin:0;
+    margin-left: 35px;
+    margin-bottom: 60px;
+}
+.sales-item__link {
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1C3374;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid #1C3374;
+    cursor: pointer;
+    margin-left: 35px;
+}
+@media(max-width:1199px) {
+    .page-sales__wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 88.2%;
+        padding-top: 100px;
+    }
+    .page-sales__wrapper h2 {
+        font-size: 42px;
+        line-height: 42px;
+        letter-spacing: 0.03em;
+        margin-bottom: 40px;
+    }
+    .sales-unlimited {
+        width: 100%;
+    }
+    .sales-unlimited__left {
+        width: 41.15%;
+    }
+    .sales-unlimited__right {
+        width: 58.85%;
+        background: url('../img/promotions-bg-tablet@1x.jpg') no-repeat;
+        background-size: cover;
+    }
+    .sales-list {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sales-item {
+        min-height: 171px;
+        width: 47.84%;
+        padding-bottom: 40px;
+    }
+    .sales-item h4 {
+        margin-bottom: 15px;
+    }
+    .sales-item p {
+        margin-bottom:45px;
+        min-height: 44px;
+    }
+}
+@media(max-width:767px) {
+    .page-sales__wrapper {
+        width: 90.6%;
+        padding-top: 70px;
+    }
+    .page-sales__wrapper h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .sales-unlimited {
+        min-height: 580px;
+        flex-direction: column;
+    }
+    .sales-unlimited__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 299px;
+        padding-top: 0;
+    }
+    .sales-unlimited__left span {
+        margin:0;
+        margin-top: 39px;
+        text-align: center;
+    }
+    .sales-unlimited__left h3 {
+        margin:0;
+        text-align: center;
+        line-height: 80px;
+        margin-bottom: 5px;
+    }
+    .sales-unlimited__left p {
+        margin:0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .sales-unlimited__left__link {
+        margin:0;
+        max-width: 79px;
+    }
+    .sales-unlimited__right {
+        width: 100%;
+        min-height: 299px;
+        background: url(../img/promotions-bg-phone@1x.jpg) no-repeat;
+        background-size: cover;
+    }
+    .sales-list {
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 452px;
+    }
+    .sales-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .sales-item h4 {
+        text-align: center;
+        margin:0;
+        margin-top: 36px;
+        margin-bottom: 15px;
+    }
+    .sales-item p {
+        text-align: center;
+        margin:0;
+        margin-bottom: 27px;
+        max-width: 159px;
+    }
+    .sales-item__link {
+        margin:0;
+    }
+}

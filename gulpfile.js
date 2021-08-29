@@ -9,13 +9,57 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
-var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var concat = require("gulp-concat");
 var del = require("del");
+const webpack = require(`webpack-stream`);
+
+let isDev = true;
+
+const mainWebpackConfig = {
+  output: {
+    filename: `index.js`
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: `babel-loader`,
+        exclude: /node_modules/,
+        options: {
+          presets: [[`@babel/preset-env`, {
+            "targets": `> 0.25%, not dead`
+          }]]
+        }
+      }
+    ]
+  },
+  mode: isDev ? `development` : `production`,
+  devtool: isDev ? `eval-sourse-map` : `none`
+};
+
+const vendorWebpackConfig = {
+  output: {
+    filename: `index.js`
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: [/node_modules\/(?!(swiper|dom7)\/).*/],
+        loader: `babel-loader`,
+        options: {
+          presets: [`@babel/preset-env`]
+        }
+      }
+    ]
+  },
+  mode: isDev ? `development` : `production`,
+  devtool: isDev ? `eval-sourse-map` : `none`
+};
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -47,18 +91,6 @@ gulp.task("server", function () {
 gulp.task("refresh", function (done) {
   server.reload();
   done();
-});
-
-gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
-    ]))
-
-    .pipe(gulp.dest("source/img"));
-
 });
 
 gulp.task("webp", function () {

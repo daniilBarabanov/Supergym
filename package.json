@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
@@ -53,6 +57,9 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1"
+    "del": "^4.1.1",
+    "imask": "^6.1.0",
+    "swiper": "^7.0.1",
+    "webpack-stream": "^6.1.2"
   }
 }
