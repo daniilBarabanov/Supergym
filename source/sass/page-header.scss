@@ -15,6 +15,12 @@
     justify-content: space-between;
     padding-top: 30px;
 }
+.header-logo__image {
+    fill: white;
+}
+.header-logo__image:hover {
+    opacity: 0.7;
+}
 .header-top__phone {
     font-family: 'Bebas Neue', 'Arial', sans-serif;
     font-size: 26px;
@@ -22,6 +28,9 @@
     color:#ffffff;
     text-decoration: none;
     letter-spacing: 0.03em;
+}
+.header-top__phone:hover {
+    opacity: 0.7;
 }
 .page-header__bottom {
     display: flex;
@@ -98,6 +107,9 @@
     align-self: flex-end;
     margin-top:80px;
 }
+.header-left__button:hover {
+    opacity: 0.6;
+}
 .header-middle {
     width: 48%;
     max-width: 500px;
@@ -111,28 +123,35 @@
     margin-top:-1px;
 }
 .header-right {
-    margin:0;
-    align-self: flex-end;
-}
-.header-socials {
-    list-style: none;
-    padding:0;
-}
-.header-right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     align-self: flex-end;
     width: 12%;
+    margin:0;
 }
 .header-socials {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     min-height: 75px;
     margin:0;
     margin-bottom: 45px;
+    list-style: none;
+    padding:0;
 }
+.socials-item__link__logo {
+    fill: white;
+}
+header .socials-item {
+    margin-right: 0;
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .header-middle  {
+        background-image: url("../img/header-superman-descktop@2x.jpg");
+    }
+  }
 @media(max-width:1199px) {
     .page-header {
         min-height: 554px;
@@ -191,6 +210,14 @@
         height: 390px;
         margin-top: 25px;
     }
+    .header-middle {
+        background-image: url("../img/header-superman-tablet@1x.jpg");
+    }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .header-middle  {
+            background-image: url("../img/header-superman-tablet@2x.jpg");
+        }
+      }
 }
 @media(max-width:767px){
     .page-header {

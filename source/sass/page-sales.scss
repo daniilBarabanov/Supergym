@@ -143,6 +143,12 @@
     cursor: pointer;
     margin-left: 35px;
 }
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .sales-unlimited__right  {
+        background: url('../img/promotions-bg-desktop@2x.jpg') no-repeat;
+        background-size: cover;
+    }
+  }
 @media(max-width:1199px) {
     .page-sales__wrapper {
         flex-direction: column;
@@ -185,6 +191,12 @@
         margin-bottom:45px;
         min-height: 44px;
     }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .sales-unlimited__right  {
+            background: url('../img/promotions-bg-tablet@2x.jpg') no-repeat;
+            background-size: cover;
+        }
+      }
 }
 @media(max-width:767px) {
     .page-sales__wrapper {
@@ -259,4 +271,10 @@
     .sales-item__link {
         margin:0;
     }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .sales-unlimited__right  {
+            background: url('../img/promotions-bg-phone@2x.jpg') no-repeat;
+            background-size: cover;
+        }
+      }
 }

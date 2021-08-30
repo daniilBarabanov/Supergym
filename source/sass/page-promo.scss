@@ -41,8 +41,9 @@
 .page-promo__photo {
     width: 105%;
     height: 401px;
-    background: url(../img/gym-bg-gym-desktop@1x.jpg);
+    background: url(../img/gym-bg-gym-desktop@1x.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .promo-video {
     position: relative;
@@ -90,6 +91,18 @@
     height: 17px;
     z-index: 10;
 }
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-promo__photo  {
+        background: url(../img/gym-bg-gym-desktop@2x.jpg) no-repeat;
+        background-size: cover;
+    }
+    .promo-video {
+        background: url(../img/gym-bg-video-desktop@2x.jpg) no-repeat,
+        rgba(20, 54, 122, 0.5);
+        background-size: cover;
+        background-position: center;
+    }
+  }
 @media(max-width:1199px) {
     .page-promo {
         min-height: 790px;
@@ -167,6 +180,18 @@
         height: 17px;
         z-index: 10;
     }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .page-promo__photo  {
+            background: url(../img/gym-bg-gym-tablet@2x.jpg) no-repeat;
+            background-size: cover;
+        }
+        .promo-video {
+            background: url(../img/gym-bg-video-tablet@2x.jpg) no-repeat,
+            rgba(20, 54, 122, 0.5);
+            background-size: cover;
+            background-position: center;
+        }
+      }
 }
 @media(max-width:767px){
     .page-promo {
@@ -198,13 +223,16 @@
         height: 313px;
     }
     .promo-video {
+        position: relative;
         margin:0;
-        top:700px;
+        top:400px;
         left:0;
-        width: 100%;
+        width: 320px;
         background: url(../img/gym-bg-video-phone@1x.jpg) no-repeat,
         rgba(20, 54, 122, 0.5);
         background-size: cover;
+        background-position: center;
+        margin:0 auto;
     }
     .promo-video__button {
         width: 52px;
@@ -219,4 +247,15 @@
         top:75px;
         left:50%;
     }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .page-promo__photo  {
+            background: url(../img/gym-bg-gym-phone@2x.jpg) no-repeat;
+            background-size: cover;
+        }
+        .promo-video {
+            background: url(../img/gym-bg-video-phone@2x.jpg) no-repeat,
+            rgba(20, 54, 122, 0.5);
+            background-size: cover;
+        }
+      }
 }
