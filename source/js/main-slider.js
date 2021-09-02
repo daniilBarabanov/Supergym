@@ -23,6 +23,10 @@ function showImage(n) {
 }
 showImage(slideIndex);
 
-function plusIndex(n) {
-    showImage(slideIndex += n);
+
+document.getElementById('next').onclick = function plusIndex(n) {
+    showImage(slideIndex -= 1);
+}
+document.getElementById('prev').onclick = function plusIndex(n) {
+    showImage(slideIndex += 1);
 }

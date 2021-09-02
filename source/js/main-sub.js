@@ -33,7 +33,8 @@ function plusSub(a) {
 }
 
 function currentSlide(a) {
-    'use strict' 
-    
-    showBlock(subIndex = a);
-}
+        'use strict'
+
+        showBlock(subIndex = a);
+        console.log('chert');
+    }

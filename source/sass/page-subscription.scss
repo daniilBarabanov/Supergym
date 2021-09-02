@@ -26,6 +26,8 @@
     min-width: 341px;
     padding:0;
     border-bottom:2px solid rgba(120, 120, 120, 0.2);
+    margin-top: 31px;
+    margin-bottom: 0;
 }
 .months-item {
     position: relative;
@@ -69,7 +71,7 @@
     left: 0;
     transition: all 0.3s;
 }
-.month-item__link--active {
+.month-item-active {
     color: rgba(16, 38, 84, 1);
 }
 .page-subscription__cards {
@@ -91,7 +93,7 @@
     min-height: 360px;
     margin-top: 37px;
     margin-right: 3.5%;
-    padding-top: 57px;
+    padding-top: 62px;
     padding-bottom: 66px;
     text-align: center;
     box-sizing: border-box;
@@ -139,6 +141,7 @@
     line-height: 24px;
     font-weight: 300;
     color:rgba(73, 90, 125, 1);
+    margin-top: 10px;
 }
 .subscription-cards__item .cards-item__price {
     font-family: 'Roboto Condensed', 'Airal', sans-serif;
@@ -147,6 +150,9 @@
     font-weight: 700;
     color:rgba(16, 58, 174, 1);
     z-index: 2;
+    margin:0;
+    margin-top: 50px;
+    margin-bottom: 33px;
 }
 .cards-item__price::before {
     content: attr(data-price);

@@ -13,7 +13,7 @@
     letter-spacing: 0.03em;
     color: #102654;
     margin:0;
-    margin-bottom: 45px;
+    margin-bottom: 54px;
 }
 .swiper-container {
     position: relative;
@@ -32,7 +32,7 @@
     padding-left: 62px;
     padding-right: 62px;
     padding-top: 62px;
-    padding-bottom: 62px;
+    padding-bottom: 58px;
     display: flex;
     flex-direction: row;
     background-color: #1C3374;
@@ -51,6 +51,7 @@
     line-height: 30px;
     color:#ffffff;
     margin:0;
+    margin-bottom: 4px;
 }
 .feedback-text p {
     font-family: 'Roboto Condensed', 'Arial', sans-serif;
@@ -66,7 +67,7 @@
     margin:0;
     list-style: none;
 }
-.feedback-controls__item__button {
+.swiper-container__button {
     width: 16px;
     height: 32px;
     background-color: transparent;
@@ -74,7 +75,7 @@
     padding:0;
     cursor: pointer;
 }
-.feedback-controls__item__button--prev {
+.swiper-container__button-prev {
     position: absolute;
     top:102px;
     left:-55px;
@@ -82,7 +83,7 @@
     background-position: center;
     cursor: pointer;
 }
-.feedback-controls__item__button--next {
+.swiper-container__button-next{
     position: absolute;
     top:102px;
     right:-55px;
@@ -147,11 +148,11 @@
         margin-top: 120px;
         text-align: center;
     }
-    .feedback-controls__item__button--prev {
+    .swiper-container__button-prev{
         top:140px;
         left:-30px;
     }
-    .feedback-controls__item__button--next {
+    .swiper-container__button-next {
         top:140px;
         right:-30px;
     }

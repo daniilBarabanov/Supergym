@@ -13,17 +13,17 @@
     font-family: 'Bebas Neue', 'Arial', sans-serif;
     font-size: 49px;
     line-height: 63px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     margin:0;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
-.page-free__form {
+.page-free__container form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.page-free__form input {
+.page-free input {
     box-sizing: border-box;
     background-color: transparent;
     border: none;
@@ -37,14 +37,18 @@
     appearance: none;
     border-radius: 0;
     outline: none;
+    cursor: pointer;
 }
-.page-free__form input:focus {
+.page-free input:hover {
+    opacity: 0.7;
+}
+.page-free input:focus {
     border-bottom: 1px solid #ffffff;
 }
-.page-free__form input::placeholder {
+.page-free input::placeholder {
     color:#ffffff;
 }
-.page-free__form button {
+.page-free button {
     width: 100%;
     min-height: 55px;
     margin-top: 28px;
@@ -63,8 +67,8 @@
     outline: none;
     cursor: pointer;
 }
-.page-free__form button:hover,
-.page-free__form button:focus {
+.page-free button:hover,
+.page-free button:focus {
     border-radius: 2px;
     box-shadow: 0 0 10px #ffffff;
     transition: all 0.3s;
@@ -85,7 +89,7 @@
         font-size: 42px;
         line-height: 42px;
     }
-    .page-free__form input {
+    .page-free input {
         width: 44.49%;
     }
 }
@@ -103,14 +107,14 @@
         font-size: 32px;
         line-height: 32px;
     }
-    .page-free__form {
+    .page-free form {
         flex-direction: column;
     }
-    .page-free__form input {
+    .page-free input {
         width: 100%;
         margin-bottom: 40px;
     }
-    .page-free__form button {
+    .page-free button {
         margin:0;
     }
 }
