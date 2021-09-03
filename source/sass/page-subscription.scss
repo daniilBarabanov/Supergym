@@ -137,14 +137,6 @@
 }
 .subscription-cards__item p {
     font-family: 'Roboto Condensed', 'Airal', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300;
-    color:rgba(73, 90, 125, 1);
-    margin-top: 10px;
-}
-.subscription-cards__item .cards-item__price {
-    font-family: 'Roboto Condensed', 'Airal', sans-serif;
     font-size: 60px;
     line-height: 90px;
     font-weight: 700;
@@ -154,7 +146,15 @@
     margin-top: 50px;
     margin-bottom: 33px;
 }
-.cards-item__price::before {
+.subscription-cards__item p:first-of-type {
+    font-family: 'Roboto Condensed', 'Airal', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color:rgba(73, 90, 125, 1);
+    margin-top: 10px;
+}
+.subscription-cards__item p::before {
     content: attr(data-price);
     position: absolute;
     font-size: 100px;
@@ -269,14 +269,12 @@
         font-size: 22px;
         line-height: 24px;
     }
-    .subscription-cards__item p {
-    }
-    .subscription-cards__item .cards-item__price {
+    .subscription-cards__item p:first-of-type  {
         font-size: 48px;
         line-height: 72px;
         margin-top: 30px;
     }
-    .cards-item__price::before {
+    .subscription-cards__item p::before {
         content: attr(data-price);
         position: absolute;
         font-size: 80px;

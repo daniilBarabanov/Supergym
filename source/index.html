@@ -12,7 +12,7 @@
     <link rel="preload" href="fonts/Roboto_Condensed/Roboto_Condensed_Bold.woff2" as="font" />
     <link rel="preload" href="fonts/Roboto_Condensed/Roboto_Condensed-Light.woff2" as="font" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> -->
   </head>
   <body>
     <div class="wrapper">
@@ -85,32 +85,32 @@
           <h2>Абонементы</h2>
           <ul class="page-subscription__list months-list">
             <li class="months-list__item months-item">
-              <a class="months-item__link month-item-active is-active" onclick="currentSlide(1)" href="javascript:void(0);">1 месяц</a>
+              <a class="months-item__link month-item-active is-active" href="javascript:void(0);">1 месяц</a>
             </li>
             <li class="months-list__item months-item">
-              <a class="months-item__link" onclick="currentSlide(2)" href="javascript:void(0);">6 месяцев</a>
+              <a class="months-item__link" href="javascript:void(0);">6 месяцев</a>
             </li>
             <li class="months-list__item months-item">
-              <a class="months-item__link" onclick="currentSlide(3)" href="javascript:void(0);">12 месяцев</a>
+              <a class="months-item__link" href="javascript:void(0);">12 месяцев</a>
             </li>
           </ul>
           <ul class="page-subscription__cards subscription-cards subscription-cards--month is-active">
             <li class="subscription-cards__item cards-item" tabindex="0">
               <h4>С тренером</h4>
               <p>12 занятий</p>
-              <p class="cards-item__price" data-price="5000">5000<span>₽</span></p>
+              <p data-price="5000">5000<span>₽</span></p>
               <a class="cards-item__button cards-item__button--gradient" href="#">Купить абонемент</a>
             </li>
             <li class="subscription-cards__item cards-item" tabindex="0">
               <h4>Дневной</h4>
               <p>с 8:00 до 17:00</p>
-              <p class="cards-item__price" data-price="1700">1700<span>₽</span></p>
+              <p data-price="1700">1700<span>₽</span></p>
               <a class="cards-item__button cards-item__button--gradient" href="#">Купить абонемент</a>
             </li>
             <li class="subscription-cards__item cards-item" tabindex="0">
               <h4>Полный день</h4>
               <p>С 8:00 до 22:00</p>
-              <p class="cards-item__price" data-price="2700">2700<span>₽</span></p>
+              <p data-price="2700">2700<span>₽</span></p>
               <a class="cards-item__button cards-item__button--gradient" href="#">Купить абонемент</a>
             </li>
           </ul>
@@ -118,19 +118,19 @@
             <li class="subscription-cards__item cards-item">
               <h4>С тренером</h4>
               <p>12 занятий</p>
-              <p class="cards-item__price" data-price="25000">25000<span>₽</span></p>
+              <p data-price="25000">25000<span>₽</span></p>
               <a class="cards-item__button cards-item__button--gradient" href="#">Купить абонемент</a>
             </li>
             <li class="subscription-cards__item cards-item">
               <h4>Дневной</h4>
               <p>с 8:00 до 17:00</p>
-              <p class="cards-item__price" data-price="8500">8500<span>₽</span></p>
+              <p data-price="8500">8500<span>₽</span></p>
               <a class="cards-item__button cards-item__button--gradient" href="#">Купить абонемент</a>
             </li>
             <li class="subscription-cards__item cards-item">
               <h4>Полный день</h4>
               <p>С 8:00 до 22:00</p>
-              <p class="cards-item__price" data-price="13500">13500<span>₽</span></p>
+              <p data-price="13500">13500<span>₽</span></p>
               <a class="cards-item__button cards-item__button--gradient" href="#">Купить абонемент</a>
             </li>
           </ul>
@@ -138,19 +138,19 @@
             <li class="subscription-cards__item cards-item">
               <h4>С тренером</h4>
               <p>12 занятий</p>
-              <p class="cards-item__price" data-price="40000">40000<span>₽</span></p>
+              <p data-price="40000">40000<span>₽</span></p>
               <a class="cards-item__button cards-item__button--gradient" href="#">Купить абонемент</a>
             </li>
             <li class="subscription-cards__item cards-item">
               <h4>Дневной</h4>
               <p>с 8:00 до 17:00</p>
-              <p class="cards-item__price" data-price="13600">13600<span>₽</span></p>
+              <p data-price="13600">13600<span>₽</span></p>
               <a class="cards-item__button cards-item__button--gradient" href="#">Купить абонемент</a>
             </li>
             <li class="subscription-cards__item cards-item">
               <h4>Полный день</h4>
               <p>С 8:00 до 22:00</p>
-              <p class="cards-item__price" data-price="20200">20200<span>₽</span></p>
+              <p data-price="20200">20200<span>₽</span></p>
               <a class="cards-item__button cards-item__button--gradient" href="#">Купить абонемент</a>
             </li>
           </ul>
@@ -162,15 +162,15 @@
               <h3>Super Games</h3>
               <ul class="super-left__list super-table">
                 <li class="super-table__item super-item">
-                  <p class="super-item__top super-item__top-date">Дата</p>
-                  <p class="super-item__bottom">Марта 2019</p>
+                  <p>Дата</p>
+                  <p>Марта 2019</p>
                 </li>
-                <li class="super-table__item super-item">
-                  <p class="super-item__top super-item__top-time">Время</p>
+                <li class="super-table__item super-item super-item-bottom">
+                  <p>Время</p>
                   <span>12:00</span>
                 </li>
               </ul>
-              <p class="super-left__description">Ежегодные соревнования по CrossFit</p>
+              <p>Ежегодные соревнования по CrossFit</p>
               <a class="super-left__link" href="#">Заполнить заявку</a>
             </div>
             <div class="page-super__right super-right"></div>
@@ -186,15 +186,15 @@
                         <div class="slider-track__item slider-item" >
                                             <!-- 1х: 260px*294px; 2x: 520px*588px -->
                           <picture>
-                            <source type="image/webp" width="260" height="294" srcset="img/content/slider-anna-pavlova_1x.webp 1x, img/content/slider-anna-pavlova_2x.webp 2x">
+                            <source type="image/webp" srcset="img/content/slider-anna-pavlova_1x.webp 1x, img/content/slider-anna-pavlova_2x.webp 2x">
                               <img src="img/content/slider-anna-pavlova@1x.jpg" width="260" height="294"
                               srcset="img/content/slider-anna-pavlova@1x.jpg 1x, img/content/slider-anna-pavlova@2x.jpg 2x"
                               alt="Фотография Анны Павловой">
                           </picture>
-                         <p class="slider__title">Анна Павлова</p>
+                         <p>Анна Павлова</p>
                         <div class="slider__information">
-                          <p class="slider__name">Анна Павлова</p>
-                          <p class="slider__sport">Stretching</p>
+                          <p>Анна Павлова</p>
+                          <p>Stretching</p>
                           <ul class="slider__achievement-list">
                             <li class="slider__achievement">
                               Certified Level 2 Trainer
@@ -211,15 +211,15 @@
                         <div class="slider-track__item slider-item" >
                                             <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <picture>
-                    <source type="image/webp" width="260" height="294" srcset="img/content/slider-alex-lavrov_1x.webp 1x, img/content/slider-alex-lavrov_2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/slider-alex-lavrov_1x.webp 1x, img/content/slider-alex-lavrov_2x.webp 2x">
                   <img src="img/content/slider-alex-lavrov@1x.jpg" width="260" height="294"
                   srcset="img/content/slider-alex-lavrov@1x.jpg 1x, img/content/slider-alex-lavrov@2x.jpg 2x"
                   alt="Фотография Алексея Лаврова">
                 </picture>
-                <p class="slider__title">Алексей Лавров</p>
+                <p>Алексей Лавров</p>
                 <div class="slider__information">
-                  <p class="slider__name">Алексей Лавров</p>
-                  <p class="slider__sport">Hot Iron</p>
+                  <p>Алексей Лавров</p>
+                  <p>Hot Iron</p>
                   <ul class="slider__achievement-list">
                     <li class="slider__achievement">
                       Certified Level 2 Trainer
@@ -236,15 +236,15 @@
                         <div class="slider-track__item slider-item" >
                                             <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <picture>
-                    <source type="image/webp" width="260" height="294" srcset="img/content/slider-alex-pashkov_1x.webp 1x, img/content/slider-alex-pashkov_2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/slider-alex-pashkov_1x.webp 1x, img/content/slider-alex-pashkov_2x.webp 2x">
                   <img src="img/content/slider-alex-pashkov@1x.jpg" width="260" height="294"
                   srcset="img/content/slider-alex-pashkov@1x.jpg 1x, img/content/slider-alex-pashkov@2x.jpg 2x"
                   alt="Фотография Александра Пашкова">
                   </picture>
-                <p class="slider__title">Александр Пашков</p>
+                <p>Александр Пашков</p>
                 <div class="slider__information">
-                  <p class="slider__name">Александр Пашков</p>
-                  <p class="slider__sport">CrossFit</p>
+                  <p>Александр Пашков</p>
+                  <p>CrossFit</p>
                   <ul class="slider__achievement-list">
                     <li class="slider__achievement">
                       Certified Level 3 Trainer
@@ -261,15 +261,15 @@
                         <div class="slider-track__item slider-item" >
                                             <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <picture>
-                    <source type="image/webp" width="260" height="294" srcset="img/content/slider-mariya-ketova_1x.webp 1x, img/content/slider-mariya-ketova_2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/slider-mariya-ketova_1x.webp 1x, img/content/slider-mariya-ketova_2x.webp 2x">
                   <img src="img/content/slider-mariya-ketova@1x.jpg" width="260" height="294"
                   srcset="img/content/slider-mariya-ketova@1x.jpg 1x, img/content/slider-mariya-ketova@2x.jpg 2x"
                   alt="Фотография Марии Кетовой">
                   </picture>
-                <p class="slider__title">Мария Кетова</p>
+                <p>Мария Кетова</p>
                 <div class="slider__information">
-                  <p class="slider__name">Мария Кетова</p>
-                  <p class="slider__sport">Pilates</p>
+                  <p>Мария Кетова</p>
+                  <p>Pilates</p>
                   <ul class="slider__achievement-list">
                     <li class="slider__achievement">
                       Certified Level 2 Trainer
@@ -286,15 +286,15 @@
                         <div class="slider-track__item slider-item" > 
                                            <!-- 1х: 260px*294px; 2x: 520px*588px -->
                                            <picture>
-                                            <source type="image/webp" width="260" height="294" srcset="img/content/slider-anna-pavlova_1x.webp 1x, img/content/slider-anna-pavlova_2x.webp 2x">
+                                            <source type="image/webp" srcset="img/content/slider-anna-pavlova_1x.webp 1x, img/content/slider-anna-pavlova_2x.webp 2x">
                                               <img src="img/content/slider-anna-pavlova@1x.jpg" width="260" height="294"
                                               srcset="img/content/slider-anna-pavlova@1x.jpg 1x, img/content/slider-anna-pavlova@2x.jpg 2x"
                                               alt="Фотография Анны Павловой">
                                           </picture>
-                          <p class="slider__title">Анна Павлова</p>
+                          <p>Анна Павлова</p>
                           <div class="slider__information">
-                            <p class="slider__name">Анна Павлова</p>
-                            <p class="slider__sport">Stretching</p>
+                            <p>Анна Павлова</p>
+                            <p>Stretching</p>
                             <ul class="slider__achievement-list">
                               <li class="slider__achievement">
                                 Certified Level 2 Trainer
@@ -310,15 +310,15 @@
                         <div class="slider-track__item slider-item" >                  
                           <!-- 1х: 260px*294px; 2x: 520px*588px -->
                           <picture>
-                            <source type="image/webp" width="260" height="294" srcset="img/content/slider-alex-lavrov_1x.webp 1x, img/content/slider-alex-lavrov_2x.webp 2x">
+                            <source type="image/webp" srcset="img/content/slider-alex-lavrov_1x.webp 1x, img/content/slider-alex-lavrov_2x.webp 2x">
                           <img src="img/content/slider-alex-lavrov@1x.jpg" width="260" height="294"
                           srcset="img/content/slider-alex-lavrov@1x.jpg 1x, img/content/slider-alex-lavrov@2x.jpg 2x"
                           alt="Фотография Алексея Лаврова">
                         </picture>
-                          <p class="slider__title">Алексей Лавров</p>
+                          <p>Алексей Лавров</p>
                           <div class="slider__information">
-                            <p class="slider__name">Алексей Лавров</p>
-                            <p class="slider__sport">Hot Iron</p>
+                            <p>Алексей Лавров</p>
+                            <p>Hot Iron</p>
                             <ul class="slider__achievement-list">
                               <li class="slider__achievement">
                                 Certified Level 2 Trainer
@@ -334,15 +334,15 @@
                         <div class="slider-track__item slider-item" >
                                             <!-- 1х: 260px*294px; 2x: 520px*588px -->
                                             <picture>
-                                              <source type="image/webp" width="260" height="294" srcset="img/content/slider-alex-pashkov_1x.webp 1x, img/content/slider-alex-pashkov_2x.webp 2x">
+                                              <source type="image/webp" srcset="img/content/slider-alex-pashkov_1x.webp 1x, img/content/slider-alex-pashkov_2x.webp 2x">
                                             <img src="img/content/slider-alex-pashkov@1x.jpg" width="260" height="294"
                                             srcset="img/content/slider-alex-pashkov@1x.jpg 1x, img/content/slider-alex-pashkov@2x.jpg 2x"
                                             alt="Фотография Александра Пашкова">
                                             </picture>
-                <p class="slider__title">Александр Пашков</p>
+                <p>Александр Пашков</p>
                 <div class="slider__information">
-                  <p class="slider__name">Александр Пашков</p>
-                  <p class="slider__sport">CrossFit</p>
+                  <p>Александр Пашков</p>
+                  <p>CrossFit</p>
                   <ul class="slider__achievement-list">
                     <li class="slider__achievement">
                       Certified Level 3 Trainer
@@ -359,15 +359,15 @@
                         <div class="slider-track__item slider-item" >             
                                <!-- 1х: 260px*294px; 2x: 520px*588px -->
                   <picture>
-                    <source type="image/webp" width="260" height="294" srcset="img/content/slider-mariya-ketova_1x.webp 1x, img/content/slider-mariya-ketova_2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/slider-mariya-ketova_1x.webp 1x, img/content/slider-mariya-ketova_2x.webp 2x">
                   <img src="img/content/slider-mariya-ketova@1x.jpg" width="260" height="294"
                   srcset="img/content/slider-mariya-ketova@1x.jpg 1x, img/content/slider-mariya-ketova@2x.jpg 2x"
                   alt="Фотография Марии Кетовой">
                   </picture>
-                          <p class="slider__title">Мария Кетова</p>
+                          <p>Мария Кетова</p>
                           <div class="slider__information">
-                            <p class="slider__name">Мария Кетова</p>
-                            <p class="slider__sport">Pilates</p>
+                            <p>Мария Кетова</p>
+                            <p>Pilates</p>
                             <ul class="slider__achievement-list">
                               <li class="slider__achievement">
                                 Certified Level 2 Trainer
